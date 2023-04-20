@@ -5,7 +5,7 @@ export default function Main() {
   return (
     <div>
       <div className='headerImg'></div>
-      <div></div>
+      <div className='dd'></div>
       <div className='textBackground'>
         <h1>Krispy<br/>Kreme</h1>
       </div>
