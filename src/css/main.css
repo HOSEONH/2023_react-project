@@ -6,7 +6,7 @@
 }
 .logo {
     background-image: url(../img/logo.jpg);
-    width: 200px;
+    width: 250px;
     height: 100px;
     background-size: cover;
     margin-left: 500px;
@@ -14,8 +14,8 @@
 
 .nav {
     background-image: url(../img/align-right.png);
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     background-size: cover;
 }
 
@@ -27,21 +27,59 @@
 }
 
 .textBackground {
-    background-image: url(../img/textBackground.png);
+    background-image: url(../img/도넛1.png);
     height: 100vh;
-    background-size: cover;
     padding-bottom: 300px;
 }
 
 .dd {
-    background-image: url(../img/도넛.png);
+    background-image: url(../img/도넛1.png);
     width: 100vw;
     height: 100vh;
 }
 
-h1 {
-    font-size: 25em;
+.textBackground h1 {
+    font-size: 15em;
     font-family: 'Abril Fatface', cursive;
     text-align: 'center';
     font-weight: 'bold';
+    color: rgb(236, 73, 73);
+    letter-spacing: 20px;
+    text-align: center;
+    /* align-items: center; */
+}
+
+.image {
+    background-image: url(../img/image1.png);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+}
+
+.image2 {
+    background-image: url(../img/image2.jpg);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+}
+
+.image3 {
+    background-image: url(../img/도넛.png);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+}
+
+.image4 {
+    background-image: url(../img/image3.png);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+}
+
+.image5 {
+    background-image: url(../img/도넛2.png);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
 }
