@@ -39,12 +39,12 @@
 }
 
 .textBackground h1 {
-    font-size: 15em;
+    font-size: 14em;
     font-family: 'Abril Fatface', cursive;
     text-align: 'center';
     font-weight: 'bold';
     color: rgb(236, 73, 73);
-    letter-spacing: 20px;
+    letter-spacing: 25px;
     text-align: center;
     /* align-items: center; */
 }

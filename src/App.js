@@ -5,7 +5,7 @@ import Menu from './page/Menu';
 import Cart from './page/Cart';
 import Event from './page/Event';
 import Store from './page/Store'
-import Menulist from "./page/Menulist";
+import Menulist from './page/Menulist';
 
 import { DataProvider } from './context/DataContext';
 
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Main />}/>
           <Route path='/menu' element={<Menu />} >
-            <Route path='/menu/:list' element={<Menulist />} />
+            <Route path='/menu/:category' element={<Menulist />} />
           </Route>
           <Route path='/cart' element={<Cart />}/>
           <Route path='/event' element={<Event />}/>

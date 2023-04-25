@@ -1,22 +1,28 @@
-import React, {useContext} from 'react'
-import { Link, Outlet } from 'react-router-dom';
-import DataContext from '../context/DataContext';
-import '../css/menu.css'
+import React from 'react';
+import { Link, Outlet, Route } from 'react-router-dom';
+import '../css/menu.css';
+import Menulist from './Menulist';
+
 
 export default function Menu() {
-  const value = useContext(DataContext);
+  const donut = ["All", "FEATURED", "ICED", "GLAZED", "FILLED", "CAKE"];
   return (
     <div>
       <div className='header-img'></div>
-        <h1>메뉴메뉴</h1>
+      <h1>메뉴메뉴</h1>
 
-        { value.data.ddd.map((f, i)=>(
-                <Link to={`/menu/${f.list}`} key={i}>{f.name} </Link>
-
-                ))
-            }
-
-        <Outlet />
+      { donut.map((m, i)=>(
+        <Link to={`/menu/${m}`} key={i}>{m} | </Link>
+      ))}
+      
+      <Outlet />
     </div>
   )
+}
+
+// `/menu/:category` 경로에 대한 자식 라우트 정의
+export function MenuCategory() {
+  return (
+    <Route path="/menu/:category" element={<Menulist />} />
+  );
 }

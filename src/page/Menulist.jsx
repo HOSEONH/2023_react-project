@@ -1,17 +1,22 @@
-import React,{useContext} from 'react'
+import React, { useContext } from 'react';
 import DataContext from '../context/DataContext';
-import { Link, useParams } from 'react-router-dom';
 
 export default function Menulist() {
-    const {list} = useParams();
-    const {data} = useContext(DataContext);
-    const {ddd} = data;
-
-    const newddd = ddd.find((f)=>(f.list === list))
-
-
+  const { data } = useContext(DataContext);
+  const { ddd } = data;
+  const filteredDonuts = ddd.filter((donut) => donut.category === 'FILLED');
+  
   return (
     <div>
-        Link{newddd.list}</div>
-  )
+      {filteredDonuts.map((donut, index) => (
+        <div key={index}>
+          <li>{donut.name}</li>
+          <li>{donut.detail}</li>
+          <img style={{width: '200px'}} src={donut.image} alt={donut.name} />
+          <li>{donut.price}</li>
+          <br />
+        </div>
+      ))}
+    </div>
+  );
 }
